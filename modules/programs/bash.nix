@@ -198,7 +198,7 @@ in
         ${cfg.bashrcExtra}
 
         # Commands that should be applied only for interactive shells.
-        [[ $- == *i* ]] || return
+        [[ $- == *i* ]] || return 0
 
         ${historyControlStr}
 
